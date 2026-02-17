@@ -1,11 +1,11 @@
 
-# ifndef Bno_h
-# define Bno_h
+#ifndef Bno_h
+#define Bno_h
 
-# include <Arduino.h>
-# include <Wire.h>
-# include <Adafruit_Sensor.h>
-# include <Adafruit_BNO055.h>
+#include <Arduino.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
 
 class Bno
 {
@@ -19,4 +19,4 @@ class Bno
     double yaw;
 };
 
-# endif
+#endif

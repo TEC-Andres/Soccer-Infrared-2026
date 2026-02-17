@@ -59,14 +59,14 @@ void Motors::Motor::setSpeed(float speed) {
     }
 
     int pwm = floor(abs(speed));
-    if (id == 2) pwm -= 15; // Calibration for motor 2
+    if (id == 2) pwm -= 15; // ****Calibration for motor 2
     
     pwm = constrain(pwm, 0, 255);
 
-    Serial.print("Motor ");
-    Serial.print(id);
-    Serial.print(" Speed: ");
-    Serial.println(pwm);
+    // Serial.print("Motor ");
+    // Serial.print(id);
+    // Serial.print(" Speed: ");
+    // Serial.println(pwm);
     analogWrite(pwmPin, pwm);
 }
 

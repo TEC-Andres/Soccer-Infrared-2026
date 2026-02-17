@@ -1,15 +1,13 @@
-
-# include "BNO.h"
-
+#include "BNO.h"
 
 Bno::Bno()
 {
-  yaw = 0;
+	yaw = 0;
 }
 
 void Bno::begin()
 {
-Serial.println("Orientation Sensor Test"); Serial.println("");
+  Serial.println("Orientation Sensor Test"); Serial.println("");
   if(!bno.begin(OPERATION_MODE_IMUPLUS))
   {
     /* There was a problem detecting the BNO055 ... check your connections */
