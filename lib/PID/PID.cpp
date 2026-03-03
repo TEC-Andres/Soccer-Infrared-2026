@@ -28,16 +28,16 @@ double PID::Calculate(double setpoint, double input)
     // calculate the control signal using PID
     double control = (proportional) + (integral) + (derivative);
 
-    Serial.print("Error: ");
-    Serial.print(error);
-    Serial.print(" Kp: ");
-    Serial.print(proportional);
-    Serial.print(" Ki: ");
-    Serial.print(integral);
-    Serial.print(" Kd: ");
-    Serial.print(derivative);
-    Serial.print(" Output: ");
-    Serial.print(control);
+    // Serial.print("Error: ");
+    // Serial.print(error);
+    // Serial.print(" Kp: ");
+    // Serial.print(proportional);
+    // Serial.print(" Ki: ");
+    // Serial.print(integral);
+    // Serial.print(" Kd: ");
+    // Serial.print(derivative);
+    // Serial.print(" Output: ");
+    // Serial.print(control);
 
     // update previous error and time
     last_error_ = error;

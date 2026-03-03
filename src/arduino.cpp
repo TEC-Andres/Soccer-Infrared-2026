@@ -6,13 +6,26 @@
 #include "robot.h"
 #include "PID.h"
 
-Robot robot;
+struct PIDParameters {
+    double kp;
+    double ki;
+    double kd;
+    double max_output;
+    double min_output;
+    double error_threshold;
+    double target;
+    double current_value;
+    
+    PIDParameters(double kp, double ki, double kd, double max_out, double min_out, double error_thresh)
+        : kp(kp), ki(ki), kd(kd), max_output(max_out), min_output(min_out), error_threshold(error_thresh), target(0), current_value(0) {}
+};
+
+Robot robot;    
 Bno bno;
 
 #define KP 0.0
 #define KI 0
 #define KD 0
-
 #define ERROR_THRESHOLD 5
 
 void setup() {

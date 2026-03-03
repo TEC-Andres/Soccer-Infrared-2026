@@ -51,10 +51,10 @@ namespace Constants {
     const uint8_t kPhotoRightElements = 8;
     const uint8_t kPhotoFrontElements = 8;
 
-    // Photo Treshold
-    const int kPhotoTresholdLeft = 260;
+    // Photo Treshold (lack of calibration, these values are just a reference and should be calibrated for better performance)
+    const int kPhotoTresholdLeft = 300;
     const int kPhotoTresholdRight = 290;
-    const int kPhotoTresholdFront = 315; // 81
+    const int kPhotoTresholdFront = 315; 
 
     // Ultrasonic sensor
     const uint8_t kTrigPin = 33;
